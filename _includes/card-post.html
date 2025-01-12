@@ -1,8 +1,8 @@
-{% for page in site.data.data %}
+{% for item in site.data.data %}
 <div class="card">
-  <img src="{{site.baseurl}}/{{page.img}}" class="card-img-top card-post-img" alt="{{page.title}}">
+  <img src="{{site.baseurl}}/{{item.img}}" class="card-img-top card-post-img" alt="{{item.title}}">
   <div class="card-body">
-    <p class="card-text">{{page.desc}}</p>
+    <p class="card-text">{{item.desc}}</p>
   </div>
 </div>
 {% endif %}
