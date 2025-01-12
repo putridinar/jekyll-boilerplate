@@ -1,4 +1,4 @@
-<div id="carouselExampleFade" class="carousel slide carousel-fade">
+<div id="myCarousel" class="carousel slide carousel-fade">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="{{site.baseurl}}/assets/images/normad.jpg" class="d-block w-100" alt="...">
@@ -18,4 +18,8 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
+
+  <script>
+    const carousel = new bootstrap.Carousel('#myCarousel')
+  </script>
 </div>
