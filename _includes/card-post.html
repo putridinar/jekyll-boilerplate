@@ -1,6 +1,8 @@
+{% for page in site.data.data %}
 <div class="card">
   <img src="{{site.baseurl}}/{{page.img}}" class="card-img-top card-post-img" alt="{{page.title}}">
   <div class="card-body">
     <p class="card-text">{{page.desc}}</p>
   </div>
 </div>
+{% endif %}
