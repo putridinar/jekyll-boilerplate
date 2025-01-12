@@ -1,6 +1,6 @@
 .main-container {
-  width: 992px;
-  margin: 80px 40px;
+  width: 1200px;
+  margin: 80px auto;
 @include mobile { margin: 80px 0 !important; }
 }
 
