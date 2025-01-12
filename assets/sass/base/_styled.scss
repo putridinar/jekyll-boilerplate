@@ -7,5 +7,6 @@
 .grid-post {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-     @include mobile { grid-template-columns: 1fr 1fr; }
+   grid-gap: 10px;
+     @include mobile { grid-template-columns: 1fr 1fr; grid-gap: 8px; }
  }
