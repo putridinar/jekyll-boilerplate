@@ -40,4 +40,4 @@ Jekyll Boilerplate is a lightweight and cleaned up version of the initial [Jekyl
 ## Credits
 
 * [Jekyll](https://jekyllrb.com/)
-* [Putri Dinarl](https://putridinar.vercel.app)
+* [Putri Dinar](https://putridinar.vercel.app)
