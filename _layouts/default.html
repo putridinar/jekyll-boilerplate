@@ -6,10 +6,11 @@
   <body>
 
 {% include offcanvas.html %}
-
-    <div class="container main-container" aria-label="Content">
+    <hr style="margin-top:80px;"/>
       {% include carusel.html %}
       <hr/>
+    <div class="container main-container" aria-label="Content">
+
       {{ content }}
     </div>
 <script src="{{ '/assets/js/infinite-jekyll.js' | relative_url }}"></script>
