@@ -14,22 +14,3 @@
 {% endfor %}
 
 
-  <button class="view-more-button">View more</button>
-
-<script>
-  
-  //-------------------------------------//
-// init Infinite Scroll
-
-$('.post-list').infiniteScroll({
-  path: getPenPath,
-  append: '.post',
-  button: '.view-more-button',
-  // using button, disable loading on scroll 
-  scrollThreshold: false,
-  status: '.page-load-status',
-});
-
-</script>
-
-
