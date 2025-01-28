@@ -34,7 +34,6 @@ exclude:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-dotenv
 
 SITE_KEY:
 API_KEY: AIzaSyDUIngXq4cj7XMx6RSOEiNj-aWSjhk0FZ4
