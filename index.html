@@ -3,6 +3,46 @@ layout: default
 permalink: /home
 ---
 
+
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+
+
      <script type="module">
        const firebaseConfig = {
        apiKey: "{{ site.API_KEY }}",
@@ -18,9 +58,18 @@ if(firebase.auth().currentUser.photoURL){document.querySelector('#userImg').src=
 signOutButton.addEventListener('click',()=>{auth.signOut()});auth.onAuthStateChanged(user=>{toggleUI()})
      </script>
 
-<div id="user-in">
-<h1>Hello <span id="user-name">user</span>!</h1>
-<h4><span id="user-email"></span></h4>
-</div>
+<h2 style="text-align:center">Selamat Datang</h2>
 
-<button class="btn-logout" id="logout-button">LogOut</button>
+<div class="card" id="user-in">
+  <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+  <h1 id="user-name">John Doe</h1>
+  <p id="user-email" class="title"></p>
+  <p>Harvard University</p>
+  <div style="margin: 24px 0;">
+    <a href="#"><i class="fa fa-dribbble"></i></a> 
+    <a href="#"><i class="fa fa-twitter"></i></a>  
+    <a href="#"><i class="fa fa-linkedin"></i></a>  
+    <a href="#"><i class="fa fa-facebook"></i></a> 
+  </div>
+  <p><button id="logout-button">LogOut</button></p>
+</div>
