@@ -2,8 +2,11 @@
   display: grid;
   grid-template-colomns: 1fr 1fr 1fr;
   grid-gap: 10px;
-  .grid-contain {
+  .grid_contain {
    max-widht: 300px;
    widht: 100%;
+   .img_contain {
+    width: 300px;
+  }
  }
 }
