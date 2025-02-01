@@ -2,4 +2,8 @@
   display: grid;
   grid-template-colomns: 1fr 1fr 1fr;
   grid-gap: 10px;
+  .grid-contain {
+   max-widht: 300px;
+   widht: 100%;
+ }
 }
