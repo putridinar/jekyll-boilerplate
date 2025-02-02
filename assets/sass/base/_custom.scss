@@ -7,6 +7,7 @@
   grid-gap: 10px;
 @include mobile {
   grid-template-colomns: 1fr 1fr;
+  grid-gap: 20px;
 }
   .grid_contain {
    max-widht: 300px;
