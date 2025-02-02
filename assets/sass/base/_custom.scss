@@ -1,7 +1,11 @@
 .container-post {
+  max-widht: 910px;
   width: 100%;
   margin: auto;
   padding: 20px;
+@include mobile {
+  
+}
 }
 .post_contain {
   display: grid;
