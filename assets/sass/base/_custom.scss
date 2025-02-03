@@ -9,11 +9,11 @@
 
 .post_contain {
   display: grid;
-  grid-template-colomns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
 @include mobile {
-  grid-template-colomns: 1fr 1fr;
-  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
 }
   .grid_contain {
    max-widht: 300px;
