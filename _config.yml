@@ -30,6 +30,8 @@ exclude:
   - CNAME
   - assets/sass
 
+include: ["posts.json"]
+
 # Plugin settings
 plugins:
   - jekyll-feed
