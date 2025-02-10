@@ -110,11 +110,13 @@ async function fetchPosts() {
 
         postsContainer.innerHTML = data.posts.map(post => `
 <div class="post_contain">
-                        <h2><a href="${post.url}">${post.title}</a></h2>
   <div class="grid_contain">
    <img class="img_contain" src="${post.img}" />
-  </div>
+<div class="grid_body">
+                        <span><a href="${post.url}">${post.title}</a></span>
                         <p>${post.excerpt}</p>
+</div>
+  </div>
 </div>
         `).join("");
     } catch (error) {
