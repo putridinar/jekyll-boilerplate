@@ -31,10 +31,12 @@
   width: 100%;}
   }
  }
-.grid_body { text-align: center;
+.grid_body { 
+  text-align: center;
+  background: #000;
  .grid_title { 
    font-size: 16px;
-   color: #000;
+   color: #fff;
   }
  }
 }
