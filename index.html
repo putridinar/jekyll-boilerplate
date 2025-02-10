@@ -111,9 +111,10 @@ async function fetchPosts() {
         postsContainer.innerHTML = data.posts.map(post => `
 <div class="post_contain">
   <div class="grid_contain">
+<a href="${post.url}">
    <img class="img_contain" src="${post.img}" />
 <div class="grid_body">
-                        <span class="grid_title"><a href="${post.url}">${post.title}</a></span>
+                        <span class="grid_title">${post.title}</span></a>
                         <p>${post.excerpt}</p>
 </div>
   </div>
