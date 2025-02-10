@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Kopi Hitam Manfaat
+title: Manfaat Kopi Hitam
 img: /assets/images/img.png
 ---
 
