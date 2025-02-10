@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Kopi Hitam Manfaat
 img: /images/file-C8cYrdfH2FtMCUa4D5KuDq.webp
 ---
