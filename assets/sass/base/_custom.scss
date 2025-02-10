@@ -18,11 +18,13 @@
   .grid_contain {
    max-width: 300px;
    width: 100%;
-   border-radius: 12px;
+   border-radius: 10px 10px 10px 10px;
+   -webkit-border-radius: 10px 10px 10px 10px;
+   -moz-border-radius: 10px 10px 10px 10px;
    overflow: hidden;
-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
    .img_contain {
     width: 100%;
     height: 180px;
