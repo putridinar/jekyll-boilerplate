@@ -89,7 +89,7 @@ signOutButton.addEventListener('click',()=>{auth.signOut()});auth.onAuthStateCha
     <script>
         async function fetchPosts() {
             try {
-                const response = await fetch('{{site.baseurl}}/posts.json');
+                const response = await fetch('/posts.json');
                 const data = await response.json();
                 document.getElementById("posts").innerHTML = data.posts.map(post => `
 <div class="post_contain">
