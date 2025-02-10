@@ -32,7 +32,8 @@
   }
  }
 .grid_body { 
-  position: relative;
+  position: absolute;
+  width: 100%;
   text-align: center;
   background: #000;
   height: 40px;
