@@ -4,7 +4,7 @@ permalink: /posts.json
 ---
 {
   "posts": [
-    {% for post in site.posts %}
+    {% for post in site.data.slot %}
       {
         "title": "{{ post.title | escape }}",
         "url": "{{ post.url }}",
