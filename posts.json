@@ -9,6 +9,7 @@ permalink: /posts.json
         "title": "{{ post.title | escape }}",
         "url": "{{ post.url }}",
         "img": "{{ post.img }}",
+        "rtp": "{{ post.rtp }}",
         "date": "{{ post.date | date: '%Y-%m-%d' }}",
         "excerpt": "{{ post.desc }}",
         "content": "{{ post.content | strip_html | strip_newlines }}"
