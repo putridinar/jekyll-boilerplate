@@ -65,6 +65,11 @@ body {
     messagingSenderId: "{{ site.SENDER_ID }}",
     appId: "{{ site.APP_ID }}",
     measurementId: "{{ site.MEASUREMENT_ID }}"
-    };firebase.initializeApp(firebaseConfig);const auth=firebase.auth();const userSignedInDiv=document.getElementById('user-signed-in');const signInButton=document.getElementById('log-in-button');function toggleUI(){if(auth.currentUser){location.href="{{site.baseurl}}/home"}else{}}
+    };
+firebase.initializeApp(firebaseConfig);
+const auth=firebase.auth();
+const userSignedInDiv=document.getElementById('user-signed-in');
+const signInButton=document.getElementById('log-in-button');
+function toggleUI(){if(auth.currentUser){location.href="{{site.baseurl}}/home"}else{}}
         signInButton.addEventListener('click',()=>{const provider=new firebase.auth.GoogleAuthProvider();auth.signInWithPopup(provider)});auth.onAuthStateChanged(user=>{toggleUI()})
   </script>
