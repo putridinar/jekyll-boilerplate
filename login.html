@@ -68,8 +68,10 @@ body {
     };
 firebase.initializeApp(firebaseConfig);
 const auth=firebase.auth();
-const userSignedInDiv=document.getElementById('user-signed-in');
+const userSignedInDiv=document.getElementById('user-in');
 const signInButton=document.getElementById('log-in-button');
 function toggleUI(){if(auth.currentUser){location.href="{{site.baseurl}}/home"}else{}}
-        signInButton.addEventListener('click',()=>{const provider=new firebase.auth.GoogleAuthProvider();auth.signInWithPopup(provider)});auth.onAuthStateChanged(user=>{toggleUI()})
+signInButton.addEventListener('click',()=>{const provider=new firebase.auth.GoogleAuthProvider();
+auth.signInWithPopup(provider)});
+auth.onAuthStateChanged(user=>{toggleUI()})
   </script>
