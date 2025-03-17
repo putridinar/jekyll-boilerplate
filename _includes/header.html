@@ -90,7 +90,7 @@ header {
 }
 </style>
 <header>
-    <div class="logo">MyWebsite</div>
+    <div class="logo">{{site.title}}</div>
     <nav class="nav-links">
         <a href="#">Beranda</a>
         <a href="#">Produk</a>
@@ -102,10 +102,9 @@ header {
 
 <!-- Menu Mobile -->
 <div class="mobile-menu">
-    <a href="#">Beranda</a>
-    <a href="#">Produk</a>
-    <a href="#">Tentang</a>
-    <a href="#">Kontak</a>
+    <a href="{{site.baseurl}}/home">Beranda</a>
+    <a href="{{site.baseurl}}/">Produk</a>
+    <a href="{{site.baseurl}}/profil">Profil</a>
 </div>
 
 <script>
